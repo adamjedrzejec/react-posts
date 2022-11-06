@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* My css */
+
+body {
+  background-color: antiquewhite;
+}
+
+.container {
+  padding: 0 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.header {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.btn {
+  padding: 8px 10px;
+  transition: 200ms;
+  border-radius: 5px;
+  border: 2px solid #0004;
+  cursor: pointer;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(75%);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: gray !important;
+}
+
+.post {
+  border: 2px solid #0007;
+  border-radius: 20px;
+  margin: 15px 0;
+  padding: 10px;
+  transition: 200ms;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.post__content {
+  margin: 5px 0;
+}
+
+.post__created-at {
+  font-size: small;
+  color: darkslategray;
+}
+
+.create-post-form {
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px dashed #0004;
+}
+
+.create-post-form__form-control {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.create-post-form__label {
+  font-weight: 500;
+}
+
+.create-post-form__input, .create-post-form__textarea {
+  background-color: rgb(255, 251, 245);
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid #000a;
+}
+
+.create-post-form__textarea {
+  resize: none;
+}
